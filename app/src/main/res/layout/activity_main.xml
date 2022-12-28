@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15sp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pizza Resto"
+        android:textColor="@color/red_main"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20sp"
+        app:layout_constraintBottom_toTopOf="@id/image_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_marginBottom="100sp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pizzeria"
+        app:layout_constraintBottom_toTopOf="@id/store_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/store_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Store Location : "
+        android:textColor="@color/text_main"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/store_spinner"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/store_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/nama_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/nama_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Name : "
+        android:textColor="@color/text_main"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/input_nama_id"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/input_nama_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:layout_marginBottom="20sp"
+        android:elevation="5sp"
+        android:hint="Please fill your name"
+        android:inputType="text"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/button_submit_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/rectangle_bg"/>
+
+    <Button
+        android:id="@+id/button_submit_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80sp"
+        android:text="Submit"
+        android:elevation="5sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

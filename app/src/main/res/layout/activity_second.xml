@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <ImageView
+        android:id="@+id/display_picture_id"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_margin="10sp"
+        android:src="@drawable/profile_picture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/display_name_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5sp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Hello, "
+        app:layout_constraintStart_toEndOf="@id/display_picture_id"
+        app:layout_constraintTop_toTopOf="@id/display_picture_id"
+        app:layout_constraintBottom_toBottomOf="@id/display_picture_id"/>
+
+    <ImageView
+        android:id="@+id/store_photos_id"
+        android:layout_marginTop="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="250sp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ciwalk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/display_picture_id" />
+
+    <TextView
+        android:id="@+id/store_label_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Store"
+        android:layout_margin="25sp"
+        android:textColor="@color/text_main"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/store_photos_id"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/store_name_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="StoreLocation"
+        android:textColor="@color/text_main"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/store_label_id"
+        app:layout_constraintBottom_toBottomOf="@id/store_label_id"/>
+
+    <TextView
+        android:id="@+id/location_label_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:layout_marginTop="16sp"
+        android:textColor="@color/text_main"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/store_label_id"
+        app:layout_constraintStart_toStartOf="@id/store_label_id"/>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/location_group_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="location_maps_id,location_pin_id" />
+
+    <TextView
+        android:id="@+id/location_maps_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find on Maps"
+        android:textColor="@color/text_main"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/location_pin_id"
+        app:layout_constraintTop_toTopOf="@id/location_label_id"
+        app:layout_constraintBottom_toBottomOf="@id/location_label_id"/>
+
+    <ImageView
+        android:id="@+id/location_pin_id"
+        android:layout_width="24sp"
+        android:layout_height="24sp"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="25sp"
+        android:src="@drawable/location_pin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/location_label_id"
+        app:layout_constraintBottom_toBottomOf="@id/location_maps_id"/>
+
+    <Button
+        android:id="@+id/button_submit_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80sp"
+        android:layout_marginHorizontal="15sp"
+        android:text="See Menus"
+        android:elevation="5sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

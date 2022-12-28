@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Pizza Resto</string>
+    <string name="pepperoni_desc">Pepperoni is an American variety of spicy salami made from cured pork and beef seasoned with paprika or other chili pepper.Prior to cooking, pepperoni is characteristically soft, slightly smoky, and bright red. Thinly sliced pepperoni is one of the most popular pizza toppings in American pizzerias.</string>
+    <string name="shrimp_desc">Shrimp on a pizza isn’t what might first jump to mind. But let me tell you: it’s a must try! The garlicky, buttery shrimp against creamy ricotta cheese is one of the best pizza topping combinations we’ve had in a while. It’s so satisfying, you’ll be hooked.</string>
+    <string name="salmon_desc">This unique pizza is great for any meal. It’s a fun dish for breakfast or brunch, and it’s certainly welcome at lunch and dinner, too. To help keep portions (and calories, sodium, and sat fat) in check, think of pizza—and any other pizza, for that matter—as your entrée, not your meal.</string>
+    <string name="margherita_desc">Flavorful Margherita Pizza only includes a few simple and tasty ingredients, like perfectly melty mozzarella cheese and fresh basil. My easy version includes a homemade whole wheat pizza dough and scratch-made tomato sauce, but can also be made using store bought staples and your choice of toppings.</string>
+</resources>

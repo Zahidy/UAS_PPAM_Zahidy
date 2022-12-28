@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderActivity">
+
+    <TextView
+        android:id="@+id/OrderDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Order Detail : "
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/text_main"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/NamaPemesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="12dp"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:text="Nama Pemesan : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OrderDetail" />
+
+    <TextView
+        android:id="@+id/LokasiStore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="3dp"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:text="Store : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NamaPemesan" />
+
+    <TextView
+        android:id="@+id/Pesanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="3dp"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:text=" sudah dipesan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LokasiStore" />
+
+    <TextView
+        android:id="@+id/pengiriman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Pengiriman :"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/text_main"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Pesanan" />
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/pengiriman" >
+    <RadioButton
+        android:id="@+id/SelfService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:text="Ambil Sendiri"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pengiriman" />
+
+    <RadioButton
+        android:id="@+id/FastDelivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:textColor="@color/black"
+        android:text="Fast Delivery (Maksimal 30 menit sampai)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SelfService" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/menu_button_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginHorizontal="20sp"
+        android:text="DONE"
+        android:elevation="5sp"
+        app:layout_constraintTop_toBottomOf="@id/RadioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/OrderConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="20sp"
+        android:textSize="14sp"
+        android:padding="5sp"
+        android:textColor="@color/white"
+        android:background="@drawable/toastrectangle"
+        android:text=""
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_button_order" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

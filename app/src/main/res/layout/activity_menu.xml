@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <ImageView
+        android:id="@+id/menu_big_picture"
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pizza_pepperoni"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/menu_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="Pizza Variant"
+        android:shadowColor="@color/black"
+        android:shadowRadius="20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/menu_big_picture"/>
+
+    <TextView
+        android:id="@+id/menu_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="18sp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_main"
+        android:text="Price: Rp. xx.xxxx,xx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_big_picture"/>
+
+    <TextView
+        android:id="@+id/menu_item_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18sp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_main"
+        android:justificationMode="inter_word"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet fringilla nunc, sit amet convallis augue. Sed iaculis nunc quis ex pulvinar, vitae rutrum dolor porttitor. Ut id iaculis dui, in suscipit eros. Mauris lobortis enim eu consequat congue. Donec lectus mauris, consequat ut massa tempor, vehicula vehicula turpis."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_item_price"/>
+
+    <Button
+        android:id="@+id/menu_button_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginHorizontal="20sp"
+        android:text="ORDER NOW"
+        android:elevation="5sp"
+        app:layout_constraintTop_toBottomOf="@id/menu_item_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/menu_button_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:elevation="5sp"
+        android:text="BACK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_button_order" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
